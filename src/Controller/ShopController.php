@@ -23,7 +23,17 @@ class ShopController extends AbstractController
      */
     public function home() {
 
-        return $this->render('shop/home.html.twig');
+        return $this->render('shop/home.html.twig',[
+            'title' => 'willkommen bei uns ',
+        ]);
+    }
+
+    /**
+     * @Route("/shop/12", name="shop_show")
+     */
+
+    public function show() {
+        return $this->render('shop/html.twig');
     }
 
    

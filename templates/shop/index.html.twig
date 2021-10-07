@@ -3,18 +3,38 @@
 {% block title %}Hello ShopController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+ <section class="article">
+     <article>
+         <h2> titre de l'article'</h2>
+         <div class="metadata">Ecrit le 10/05/2021 a 19:00 dans la categories politique</div>
+         <div class="content">
+             <img src="http://plachold.it/350x150" alt="">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia est vero eos recusandae, dolor voluptatibus.</p>
+             <p>Quo a eius tempore ad odio sapiente facilis laudantium nobis. Laboriosam voluptates nostrum praesentium reprehenderit.</p>
+             <a href="{{ path('shop_show') }}" class="btn btn-primary">lire la suite</a>
+         </div>
+     </article>
+     <article>
+         <h2> titre de l'article'</h2>
+         <div class="metadata">Ecrit le 10/05/2021 a 19:00 dans la categories politique</div>
+         <div class="content">
+            <img src="http://plachold.it/350x150" alt="">
+             <p>Nesciunt obcaecati expedita, quis odit omnis repellat et, possimus, ipsam sint provident aliquid consequuntur cumque.</p>
+             <p>Repudiandae odit numquam aliquam error ipsam repellat facilis excepturi aliquid, id facere quas porro qui.</p>
+             <a href="{{ path('shop_show') }}" class="btn btn-primary">lire la suite</a>
+         </div>
+     </article>
+     <article>
+         <h2> titre de l'article'</h2>
+         <div class="metadata">Ecrit le 10/05/2021 a 19:00 dans la categories politique</div>
+         <div class="content">
+            <img src="http://plachold.it/350x150" alt="">
+             <p>Nesciunt, eaque recusandae et facilis dolorem ut. Et dolorem alias qui neque eveniet placeat accusantium?</p>
+             <p>Odit asperiores consequatur non. Nobis recusandae necessitatibus facilis ad atque harum labore amet, nam deserunt.</p>
+             <a href="{{ path('shop_show') }}" class="btn btn-primary">lire la suite</a>
+         </div>
+     </article>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Users/web/kleinanzeigen/src/Controller/ShopController.php'|file_link(0) }}">src/Controller/ShopController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Users/web/kleinanzeigen/templates/shop/index.html.twig'|file_link(0) }}">templates/shop/index.html.twig</a></code></li>
-    </ul>
-</div>
+ </section>
 {% endblock %}
